@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Employee Information</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="container">
+    <div class="search-box">
+        <input type="text" id="search-input" placeholder="Search..." onkeyup="search()">
+    </div>
+    <div id="employee-list">
+        <table id="info-table">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Department</th>
+                    <th>Address</th>
+                    <th>Phone</th>
+                    <th>ID</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody id="info-body">
+                <!-- Employee information will be displayed here -->
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<div id="action-modal" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Action</h2>
+        <button id="edit-btn">Edit</button>
+        <button id="view-btn">View</button>
+        <button id="delete-btn">Delete</button>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
